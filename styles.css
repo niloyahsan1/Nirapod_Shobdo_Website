@@ -828,14 +828,6 @@ section {
 	font-size: 1.2rem;
 }
 
-.process-step:first-child h4 {
-	font-size: 1.1rem;
-	font-weight: 600;
-	color: #333;
-	margin-bottom: 0.5rem;
-	white-space: nowrap;
-}
-
 .process-step h4 {
 	font-size: 1.1rem;
 	font-weight: 600;
@@ -1074,25 +1066,21 @@ section {
 }
 
 .team-grid {
-	/* display: grid; */
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	/* gap: 2rem; */
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2.5rem;
 }
 
 .team-member {
 	background: white;
-	border-radius: 15px;
+	border-radius: 20px;
 	overflow: hidden;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-	transition:
-		transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s,
-		box-shadow 0.4s ease 0.2s;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 	text-align: center;
-	flex: 0 0 calc(33.333% - 20px);
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .team-member:hover {
@@ -1120,7 +1108,10 @@ section {
 .member-role {
 	color: #2563eb;
 	font-weight: 600;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
+	font-size: 0.95rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .member-bio {
@@ -1450,7 +1441,38 @@ section {
 	}
 
 	.team-grid {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.team-member h3 {
+		font-size: 1rem;
+		margin: 0.75rem 0.5rem 0.25rem;
+	}
+
+	.member-role {
+		font-size: 0.8rem;
+		margin-bottom: 1rem;
+	}
+
+	.member-image {
+		height: 180px;
+	}
+
+	.member-social {
+		gap: 0.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.member-social a {
+		width: 32px;
+		height: 32px;
+	}
+
+	.team-member:last-child:nth-child(odd) {
+		grid-column: 1 / span 2;
+		justify-self: center;
+		width: calc(100% / 2 - 1.5rem);
 	}
 
 	.contact-content {
@@ -1465,6 +1487,30 @@ section {
 	.phone-mockup {
 		width: 250px;
 		height: 500px;
+	}
+
+	.report-content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.report-methods {
+		gap: 1.5rem;
+	}
+
+	.tracking-id {
+		font-size: 0.9rem;
+		padding: 0.5rem 1rem;
+		word-break: break-all;
+	}
+
+	.process-card,
+	.confirmation-card {
+		padding: 1.5rem;
+	}
+
+	.report-method {
+		padding: 1.5rem;
 	}
 }
 
