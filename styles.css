@@ -1411,6 +1411,18 @@ section {
 		gap: 2rem;
 	}
 
+	.accessibility-modes {
+		justify-content: center;
+		gap: 0.5rem;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.mode-item {
+		padding: 0.5rem 0.8rem;
+		font-size: 0.8rem;
+	}
+
 	.hero-title {
 		font-size: 2.5rem;
 	}
@@ -1433,7 +1445,68 @@ section {
 	}
 
 	.features-grid {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.75rem;
+	}
+
+	.features-grid .feature-item {
+		padding: 1.5rem 0.75rem;
+	}
+
+	.features-grid .feature-item h3 {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.features-grid .feature-item p {
+		font-size: 0.8rem;
+		line-height: 1.4;
+	}
+
+	.features-grid .feature-item .feature-icon {
+		width: 50px;
+		height: 50px;
+		margin-bottom: 1rem;
+	}
+
+	.features-grid .feature-item .feature-icon i {
+		font-size: 1.2rem;
+	}
+
+	.features-grid .feature-item:nth-child(9) {
+		grid-column: 1 / span 2;
+		justify-self: center;
+		width: calc(50% - 0.375rem);
+	}
+
+	.sdg-goals {
+		flex-wrap: nowrap;
+		gap: 0.5rem;
+	}
+
+	.sdg-goal {
+		min-width: 0;
+		flex: 1;
+	}
+
+	.sdg-icon {
+		width: 60px;
+		height: 60px;
+		font-size: 1.5rem;
+	}
+
+	.sdg-number {
+		width: 20px;
+		height: 20px;
+		font-size: 0.7rem;
+	}
+
+	.sdg-goal h3 {
+		font-size: 0.9rem;
+	}
+
+	.sdg-goal p {
+		font-size: 0.75rem;
 	}
 
 	.mission-content {

@@ -1,863 +1,728 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Nirapod Shobdo</title>
-		<link
-			rel="stylesheet"
-			href="styles.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		/>
-	</head>
-	<body>
-		<!-- Navigation -->
-		<nav
-			class="navbar"
-			id="navbar"
-		>
-			<div class="nav-container">
-				<div class="nav-logo">
-					<img
-						src="./assets/logo.jpg"
-						alt="Nirapod Shobdo Logo"
-						class="nav-logo-img"
-					/>
-					<span>Nirapod Shobdo</span>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Nirapod Shobdo</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar" id="navbar">
+		<div class="nav-container">
+			<a href="#home" class="nav-logo">
+				<img src="./assets/logo.jpg" alt="Nirapod Shobdo Logo" class="nav-logo-img" />
+				<span>Nirapod Shobdo</span>
+			</a>
+			<ul class="nav-menu" id="nav-menu">
+				<li class="nav-item">
+					<a href="#home" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#features" class="nav-link">Features</a>
+				</li>
+				<li class="nav-item">
+					<a href="#rights" class="nav-link">Rights</a>
+				</li>
+				<li class="nav-item">
+					<a href="#report" class="nav-link">Report</a>
+				</li>
+				<li class="nav-item">
+					<a href="#mission" class="nav-link">Mission</a>
+				</li>
+				<li class="nav-item">
+					<a href="#team" class="nav-link">Team</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link">Contact</a>
+				</li>
+			</ul>
+			<div class="nav-toggle" id="nav-toggle">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="home" class="hero">
+		<div class="hero-container">
+			<div class="hero-content">
+				<div class="beta-badge">
+					<i class="fas fa-flask"></i> Beta Version
 				</div>
-				<ul
-					class="nav-menu"
-					id="nav-menu"
-				>
-					<li class="nav-item">
-						<a
-							href="#home"
-							class="nav-link"
-							>Home</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#about"
-							class="nav-link"
-							>About</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#features"
-							class="nav-link"
-							>Features</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#rights"
-							class="nav-link"
-							>Rights</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#report"
-							class="nav-link"
-							>Report</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#mission"
-							class="nav-link"
-							>Mission</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#team"
-							class="nav-link"
-							>Team</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#contact"
-							class="nav-link"
-							>Contact</a
-						>
-					</li>
-				</ul>
-				<div
-					class="nav-toggle"
-					id="nav-toggle"
-				>
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
+				<h1 class="hero-title">
+					<span class="title-accent">Nirapod Shobdo</span>
+					<br />Your Voice for Legal Rights & Justice
+				</h1>
+				<p class="hero-subtitle">
+					First app in Bangladesh making legal rights truly
+					accessible for people with Neurodevelopmental
+					Disabilities (NDD) and Sensory Disabilities. Report
+					cases, access rights information and get the justice you
+					deserve through Text, Audio, Sign and Easy read modes.
+				</p>
+				<div class="accessibility-modes">
+					<div class="mode-item">
+						<i class="fas fa-text-height"></i>
+						<span>Text Mode</span>
+					</div>
+					<div class="mode-item">
+						<i class="fas fa-volume-up"></i>
+						<span>Audio Mode</span>
+					</div>
+					<div class="mode-item">
+						<i class="fas fa-sign-language"></i>
+						<span>Sign Mode</span>
+					</div>
+					<div class="mode-item">
+						<i class="fas fa-eye"></i>
+						<span>Visual Mode</span>
+					</div>
+				</div>
+				<div class="hero-buttons">
+					<button class="btn btn-primary">
+						<i class="fas fa-download"></i> Download App
+					</button>
+					<button class="btn btn-secondary">
+						<i class="fas fa-play-circle"></i> Watch Demo
+					</button>
 				</div>
 			</div>
-		</nav>
-
-		<!-- Hero Section -->
-		<section
-			id="home"
-			class="hero"
-		>
-			<div class="hero-container">
-				<div class="hero-content">
-					<div class="beta-badge">
-						<i class="fas fa-flask"></i> Beta Version
+			<div class="hero-image">
+				<div class="phone-mockup">
+					<div class="phone-screen">
+						<i class="fas fa-balance-scale app-icon"></i>
+						<h3>Nirapod Shobdo</h3>
+						<p>Rights • Justice • Accessibility</p>
+						<div class="app-mockup-buttons">
+							<div class="mockup-btn">
+								<i class="fas fa-book"></i>
+								<span>Rights Info</span>
+							</div>
+							<div class="mockup-btn">
+								<i class="fas fa-file-alt"></i>
+								<span>Report Case</span>
+							</div>
+						</div>
 					</div>
-					<h1 class="hero-title">
-						<span class="title-accent">Nirapod Shobdo</span>
-						<br />Your Voice for Legal Rights & Justice
-					</h1>
-					<p class="hero-subtitle">
-						First app in Bangladesh making legal rights truly
-						accessible for people with Neurodevelopmental
-						Disabilities (NDD) and Sensory Disabilities. Report
-						cases, access rights information and get the justice you
-						deserve through Text, Audio, Sign and Easy read modes.
+				</div>
+			</div>
+		</div>
+		<div class="scroll-indicator">
+			<i class="fas fa-chevron-down"></i>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="about">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">About Nirapod Shobdo</h2>
+				<p class="section-subtitle">
+					First app in Bangladesh making legal rights accessible
+					for people with disabilities
+				</p>
+			</div>
+			<div class="about-content">
+				<div class="about-text">
+					<p>
+						<strong>Nirapod Shobdo</strong> is a pioneering
+						prototype application designed to provide rights
+						information and reporting support for people with
+						disabilities in Bangladesh. We focus on making legal
+						rights truly accessible through multiple
+						accessibility modes.
 					</p>
-					<div class="accessibility-modes">
-						<div class="mode-item">
-							<i class="fas fa-text-height"></i>
-							<span>Text Mode</span>
-						</div>
-						<div class="mode-item">
-							<i class="fas fa-volume-up"></i>
-							<span>Audio Mode</span>
-						</div>
-						<div class="mode-item">
-							<i class="fas fa-sign-language"></i>
-							<span>Sign Mode</span>
-						</div>
-						<div class="mode-item">
-							<i class="fas fa-eye"></i>
-							<span>Visual Mode</span>
-						</div>
-					</div>
-					<div class="hero-buttons">
-						<button class="btn btn-primary">
-							<i class="fas fa-download"></i> Download App
-						</button>
-						<button class="btn btn-secondary">
-							<i class="fas fa-play-circle"></i> Watch Demo
-						</button>
-					</div>
-				</div>
-				<div class="hero-image">
-					<div class="phone-mockup">
-						<div class="phone-screen">
-							<i class="fas fa-balance-scale app-icon"></i>
-							<h3>Nirapod Shobdo</h3>
-							<p>Rights • Justice • Accessibility</p>
-							<div class="app-mockup-buttons">
-								<div class="mockup-btn">
-									<i class="fas fa-book"></i>
-									<span>Rights Info</span>
-								</div>
-								<div class="mockup-btn">
-									<i class="fas fa-file-alt"></i>
-									<span>Report Case</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="scroll-indicator">
-				<i class="fas fa-chevron-down"></i>
-			</div>
-		</section>
-
-		<!-- About Section -->
-		<section
-			id="about"
-			class="about"
-		>
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">About Nirapod Shobdo</h2>
-					<p class="section-subtitle">
-						First app in Bangladesh making legal rights accessible
-						for people with disabilities
+					<p>
+						Our app serves
+						<strong>Neurodevelopmental Disabilities (NDD)
+							learners</strong>
+						including individuals with autism, ADHD and
+						intellectual disabilities as well as
+						<strong>sensory learners</strong> with hearing and
+						visual impairments. We also support families,
+						caregivers and teachers in their journey toward
+						justice and equality.
 					</p>
-				</div>
-				<div class="about-content">
-					<div class="about-text">
-						<p>
-							<strong>Nirapod Shobdo</strong> is a pioneering
-							prototype application designed to provide rights
-							information and reporting support for people with
-							disabilities in Bangladesh. We focus on making legal
-							rights truly accessible through multiple
-							accessibility modes.
-						</p>
-						<p>
-							Our app serves
-							<strong
-								>Neurodevelopmental Disabilities (NDD)
-								learners</strong
-							>
-							including individuals with autism, ADHD and
-							intellectual disabilities as well as
-							<strong>sensory learners</strong> with hearing and
-							visual impairments. We also support families,
-							caregivers and teachers in their journey toward
-							justice and equality.
-						</p>
-						<div class="about-stats">
-							<div class="stat-item">
-								<h3>4</h3>
-								<p>Accessibility Modes</p>
-							</div>
-							<div class="stat-item">
-								<h3>2013</h3>
-								<p>Disability Act</p>
-							</div>
-							<div class="stat-item">
-								<h3>1st</h3>
-								<p>In Bangladesh</p>
-							</div>
+					<div class="about-stats">
+						<div class="stat-item">
+							<h3>4</h3>
+							<p>Accessibility Modes</p>
 						</div>
-						<div class="tech-stack">
-							<h4>Technology Stack</h4>
-							<div class="tech-items">
-								<div class="tech-item">
-									<i class="fab fa-flutter"></i>
-									<span>Flutter</span>
-								</div>
-								<div class="tech-item">
-									<i class="fas fa-code"></i>
-									<span>Dart</span>
-								</div>
-								<div class="tech-item">
-									<i class="fas fa-fire"></i>
-									<span>Firebase Auth</span>
-								</div>
-								<div class="tech-item">
-									<i class="fab fa-android"></i>
-									<span>Android 12</span>
-								</div>
+						<div class="stat-item">
+							<h3>2013</h3>
+							<p>Disability Act</p>
+						</div>
+						<div class="stat-item">
+							<h3>1st</h3>
+							<p>In Bangladesh</p>
+						</div>
+					</div>
+					<div class="tech-stack">
+						<h4>Technology Stack</h4>
+						<div class="tech-items">
+							<div class="tech-item">
+								<i class="fab fa-flutter"></i>
+								<span>Flutter</span>
+							</div>
+							<div class="tech-item">
+								<i class="fas fa-code"></i>
+								<span>Dart</span>
+							</div>
+							<div class="tech-item">
+								<i class="fas fa-fire"></i>
+								<span>Firebase Auth</span>
+							</div>
+							<div class="tech-item">
+								<i class="fab fa-android"></i>
+								<span>Android 12</span>
 							</div>
 						</div>
 					</div>
-					<div class="about-image">
-						<div class="feature-cards">
-							<div class="feature-card">
-								<i class="fas fa-brain"></i>
-								<h4>NDD Support</h4>
-								<p>Autism, ADHD, Intellectual Disabilities</p>
-							</div>
-							<div class="feature-card">
-								<i class="fas fa-eye-slash"></i>
-								<h4>Sensory Support</h4>
-								<p>Visual & Hearing Impairments</p>
-							</div>
-							<div class="feature-card">
-								<i class="fas fa-gavel"></i>
-								<h4>Legal Rights</h4>
-								<p>Education, Protection, Justice</p>
-							</div>
+				</div>
+				<div class="about-image">
+					<div class="feature-cards">
+						<div class="feature-card">
+							<i class="fas fa-brain"></i>
+							<h4>NDD Support</h4>
+							<p>Autism, ADHD, Intellectual Disabilities</p>
+						</div>
+						<div class="feature-card">
+							<i class="fas fa-eye-slash"></i>
+							<h4>Sensory Support</h4>
+							<p>Visual & Hearing Impairments</p>
+						</div>
+						<div class="feature-card">
+							<i class="fas fa-gavel"></i>
+							<h4>Legal Rights</h4>
+							<p>Education, Protection, Justice</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Features Section -->
-		<section
-			id="features"
-			class="features"
-		>
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">App Features</h2>
-					<p class="section-subtitle">
-						Multimodal accessibility and comprehensive rights
-						reporting tools
+	<!-- Features Section -->
+	<section id="features" class="features">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">App Features</h2>
+				<p class="section-subtitle">
+					Multimodal accessibility and comprehensive rights
+					reporting tools
+				</p>
+			</div>
+			<div class="features-grid">
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-text-height"></i>
+					</div>
+					<h3>Text Mode</h3>
+					<p>
+						Simple, easy to read Bangla text with large fonts
+						and clear formatting for users who prefer reading
+						content.
 					</p>
 				</div>
-				<div class="features-grid">
-					<div class="feature-item">
-						<div class="feature-icon">
-							<i class="fas fa-text-height"></i>
-						</div>
-						<h3>Text Mode</h3>
-						<p>
-							Simple, easy to read Bangla text with large fonts
-							and clear formatting for users who prefer reading
-							content.
-						</p>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-volume-up"></i>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
-							<i class="fas fa-volume-up"></i>
-						</div>
-						<h3>Audio Mode</h3>
-						<p>
-							Voice-based navigation and content delivery with
-							audio buttons for all rights information and
-							reporting options.
-						</p>
+					<h3>Audio Mode</h3>
+					<p>
+						Voice-based navigation and content delivery with
+						audio buttons for all rights information and
+						reporting options.
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-sign-language"></i>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
-							<i class="fas fa-sign-language"></i>
-						</div>
-						<h3>Sign Mode</h3>
-						<p>
-							Sign language support with video submissions and
-							visual communication for deaf and hard of hearing
-							users.
-						</p>
+					<h3>Sign Mode</h3>
+					<p>
+						Sign language support with video submissions and
+						visual communication for deaf and hard of hearing
+						users.
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-eye"></i>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
-							<i class="fas fa-eye"></i>
-						</div>
-						<h3>Visual Mode</h3>
-						<p>
-							Easy read interface with icons, visual cues and
-							simplified content for users with intellectual
-							disabilities.
-						</p>
+					<h3>Visual Mode</h3>
+					<p>
+						Easy read interface with icons, visual cues and
+						simplified content for users with intellectual
+						disabilities.
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-microphone"></i>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
+					<h3>Voice Reporting</h3>
+					<p>
+						Record voice messages to report cases, complaints or
+						request help without needing to type or write.
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-video"></i>
+					</div>
+					<h3>Video Reporting</h3>
+					<p>
+						Upload sign language videos to communicate reports
+						and requests (coming soon in future updates).
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-icons"></i>
+					</div>
+					<h3>Icon-Based Forms</h3>
+					<p>
+						Visual complaint forms using icons and symbols for
+						users who struggle with text-based interfaces.
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-book"></i>
+					</div>
+					<h3>Rights Information</h3>
+					<p>
+						Access details on Education Rights, Legal
+						Protection, Disability Act 2013 and Protection from
+						Abuse.
+					</p>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon">
+						<i class="fas fa-id-card"></i>
+					</div>
+					<h3>Tracking System</h3>
+					<p>
+						Get confirmation with Tracking ID for submitted
+						reports and follow up on case status and progress.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Rights Information Section -->
+	<section id="rights" class="rights">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Rights Information</h2>
+				<p class="section-subtitle">
+					Know your rights and legal protections under Bangladesh
+					law
+				</p>
+			</div>
+			<div class="rights-grid">
+				<div class="rights-item">
+					<div class="rights-icon">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<h3>Education Rights</h3>
+					<p>
+						Access information about inclusive education
+						policies, special accommodations and your right to
+						equal educational opportunities under Bangladeshi
+						law.
+					</p>
+					<div class="rights-features">
+						<span class="rights-tag"><i class="fas fa-check"></i> Inclusive
+							Education</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Special
+							Accommodations</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Equal Access</span>
+					</div>
+				</div>
+				<div class="rights-item">
+					<div class="rights-icon">
+						<i class="fas fa-shield-alt"></i>
+					</div>
+					<h3>Legal Protection</h3>
+					<p>
+						Understand your legal rights and protections against
+						discrimination, harassment and rights violations in
+						all aspects of life.
+					</p>
+					<div class="rights-features">
+						<span class="rights-tag"><i class="fas fa-check"></i> Anti
+							Discrimination</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Legal
+							Support</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Equal
+							Treatment</span>
+					</div>
+				</div>
+				<div class="rights-item">
+					<div class="rights-icon">
+						<i class="fas fa-balance-scale"></i>
+					</div>
+					<h3>Disability Act 2013</h3>
+					<p>
+						Learn about the Rights and Protection of Persons
+						with Disabilities Act 2013 and how it safeguards
+						your rights in Bangladesh.
+					</p>
+					<div class="rights-features">
+						<span class="rights-tag"><i class="fas fa-check"></i> Legal
+							Framework</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Government
+							Support</span>
+						<span class="rights-tag"><i class="fas fa-check"></i>
+							Implementation</span>
+					</div>
+				</div>
+				<div class="rights-item">
+					<div class="rights-icon">
+						<i class="fas fa-hand-holding-heart"></i>
+					</div>
+					<h3>Protection from Abuse</h3>
+					<p>
+						Get information on how to identify, report and get
+						help for abuse, harassment and exploitation of
+						people with disabilities.
+					</p>
+					<div class="rights-features">
+						<span class="rights-tag"><i class="fas fa-check"></i> Abuse
+							Prevention</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Reporting
+							Help</span>
+						<span class="rights-tag"><i class="fas fa-check"></i> Support
+							Services</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Report/Help Section -->
+	<section id="report" class="report">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Report & Get Help</h2>
+				<p class="section-subtitle">
+					Multiple ways to report cases and request assistance
+				</p>
+			</div>
+			<div class="report-content">
+				<div class="report-methods">
+					<div class="report-method">
+						<div class="report-icon">
 							<i class="fas fa-microphone"></i>
 						</div>
 						<h3>Voice Reporting</h3>
 						<p>
-							Record voice messages to report cases, complaints or
-							request help without needing to type or write.
+							Record your voice message to report incidents,
+							complaints or request help. Simply tap the
+							microphone button and speak your issue.
 						</p>
+						<div class="report-steps">
+							<div class="step">
+								<span class="step-number">1</span>
+								<span>Tap microphone</span>
+							</div>
+							<div class="step">
+								<span class="step-number">2</span>
+								<span>Record message</span>
+							</div>
+							<div class="step">
+								<span class="step-number">3</span>
+								<span>Submit report</span>
+							</div>
+						</div>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
+					<div class="report-method">
+						<div class="report-icon">
 							<i class="fas fa-video"></i>
 						</div>
 						<h3>Video Reporting</h3>
 						<p>
-							Upload sign language videos to communicate reports
-							and requests (coming soon in future updates).
+							Upload sign language videos to communicate your
+							reports. Perfect for deaf and hard of hearing
+							users (coming soon).
 						</p>
+						<div class="report-status">
+							<span class="status-badge upcoming"><i class="fas fa-clock"></i> Coming
+								Soon</span>
+						</div>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
+					<div class="report-method">
+						<div class="report-icon">
 							<i class="fas fa-icons"></i>
 						</div>
 						<h3>Icon-Based Forms</h3>
 						<p>
-							Visual complaint forms using icons and symbols for
-							users who struggle with text-based interfaces.
+							Use visual icons and symbols to fill out
+							complaint forms without needing to read or write
+							complex text.
 						</p>
-					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
-							<i class="fas fa-book"></i>
+						<div class="report-features">
+							<span class="feature-tag"><i class="fas fa-check"></i> Visual
+								Interface</span>
+							<span class="feature-tag"><i class="fas fa-check"></i> Easy
+								Navigation</span>
+							<span class="feature-tag"><i class="fas fa-check"></i>
+								Symbol-Based</span>
 						</div>
-						<h3>Rights Information</h3>
-						<p>
-							Access details on Education Rights, Legal
-							Protection, Disability Act 2013 and Protection from
-							Abuse.
-						</p>
 					</div>
-					<div class="feature-item">
-						<div class="feature-icon">
-							<i class="fas fa-id-card"></i>
+				</div>
+				<div class="report-process">
+					<div class="process-card">
+						<h3>How Reporting Works</h3>
+						<div class="process-flow">
+							<div class="process-step">
+								<div class="process-icon">
+									<i class="fas fa-sign-in-alt"></i>
+								</div>
+								<h4>1. Open App</h4>
+								<p>
+									Launch Nirapod Shobdo and select your
+									preferred accessibility mode
+								</p>
+							</div>
+							<div class="process-arrow">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+							<div class="process-step">
+								<div class="process-icon">
+									<i class="fas fa-file-alt"></i>
+								</div>
+								<h4>2. Choose Report Type</h4>
+								<p>
+									Select voice, video or icon-based
+									reporting method
+								</p>
+							</div>
+							<div class="process-arrow">
+								<i class="fas fa-arrow-right"></i>
+							</div>
+							<div class="process-step">
+								<div class="process-icon">
+									<i class="fas fa-paper-plane"></i>
+								</div>
+								<h4>3. Submit Report</h4>
+								<p>
+									Send your report and receive
+									confirmation with Tracking ID
+								</p>
+							</div>
 						</div>
-						<h3>Tracking System</h3>
-						<p>
-							Get confirmation with Tracking ID for submitted
-							reports and follow up on case status and progress.
-						</p>
+					</div>
+					<div class="confirmation-demo">
+						<h3>Report Confirmation</h3>
+						<div class="confirmation-card">
+							<div class="success-icon">
+								<i class="fas fa-check-circle"></i>
+							</div>
+							<h4>Report Submitted Successfully</h4>
+							<div class="tracking-info">
+								<p><strong>Tracking ID:</strong></p>
+								<div class="tracking-id">8910-2305-19</div>
+							</div>
+							<div class="contact-options">
+								<button class="contact-btn">
+									<i class="fas fa-phone"></i> Contact
+									Support
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Rights Information Section -->
-		<section
-			id="rights"
-			class="rights"
-		>
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">Rights Information</h2>
-					<p class="section-subtitle">
-						Know your rights and legal protections under Bangladesh
-						law
+	<!-- Mission & Vision Section -->
+	<section id="mission" class="mission">
+		<div class="container">
+			<div class="mission-content">
+				<div class="mission-card">
+					<div class="mission-icon">
+						<i class="fas fa-bullseye"></i>
+					</div>
+					<h3>Our Mission</h3>
+					<p>
+						To make legal rights truly accessible for people
+						with Neurodevelopmental Disabilities (NDD) and
+						Sensory Disabilities in Bangladesh through
+						innovative multimodal technology, ensuring everyone
+						can understand and exercise their legal rights.
 					</p>
 				</div>
-				<div class="rights-grid">
-					<div class="rights-item">
-						<div class="rights-icon">
-							<i class="fas fa-graduation-cap"></i>
-						</div>
-						<h3>Education Rights</h3>
-						<p>
-							Access information about inclusive education
-							policies, special accommodations and your right to
-							equal educational opportunities under Bangladeshi
-							law.
-						</p>
-						<div class="rights-features">
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Inclusive
-								Education</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Special
-								Accommodations</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Equal Access</span
-							>
-						</div>
+				<div class="mission-card">
+					<div class="mission-icon">
+						<i class="fas fa-eye"></i>
 					</div>
-					<div class="rights-item">
-						<div class="rights-icon">
-							<i class="fas fa-shield-alt"></i>
-						</div>
-						<h3>Legal Protection</h3>
-						<p>
-							Understand your legal rights and protections against
-							discrimination, harassment and rights violations in
-							all aspects of life.
-						</p>
-						<div class="rights-features">
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Anti
-								Discrimination</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Legal
-								Support</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Equal
-								Treatment</span
-							>
-						</div>
-					</div>
-					<div class="rights-item">
-						<div class="rights-icon">
-							<i class="fas fa-balance-scale"></i>
-						</div>
-						<h3>Disability Act 2013</h3>
-						<p>
-							Learn about the Rights and Protection of Persons
-							with Disabilities Act 2013 and how it safeguards
-							your rights in Bangladesh.
-						</p>
-						<div class="rights-features">
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Legal
-								Framework</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Government
-								Support</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i>
-								Implementation</span
-							>
-						</div>
-					</div>
-					<div class="rights-item">
-						<div class="rights-icon">
-							<i class="fas fa-hand-holding-heart"></i>
-						</div>
-						<h3>Protection from Abuse</h3>
-						<p>
-							Get information on how to identify, report and get
-							help for abuse, harassment and exploitation of
-							people with disabilities.
-						</p>
-						<div class="rights-features">
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Abuse
-								Prevention</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Reporting
-								Help</span
-							>
-							<span class="rights-tag"
-								><i class="fas fa-check"></i> Support
-								Services</span
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Report/Help Section -->
-		<section
-			id="report"
-			class="report"
-		>
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">Report & Get Help</h2>
-					<p class="section-subtitle">
-						Multiple ways to report cases and request assistance
+					<h3>Our Vision</h3>
+					<p>
+						A Bangladesh where disability is never a barrier to
+						accessing justice and legal rights. We envision a
+						future where legal information and reporting systems
+						are fully accessible to all citizens aligning with
+						the Smart Bangladesh Vision 2041.
 					</p>
 				</div>
-				<div class="report-content">
-					<div class="report-methods">
-						<div class="report-method">
-							<div class="report-icon">
-								<i class="fas fa-microphone"></i>
-							</div>
-							<h3>Voice Reporting</h3>
-							<p>
-								Record your voice message to report incidents,
-								complaints or request help. Simply tap the
-								microphone button and speak your issue.
-							</p>
-							<div class="report-steps">
-								<div class="step">
-									<span class="step-number">1</span>
-									<span>Tap microphone</span>
-								</div>
-								<div class="step">
-									<span class="step-number">2</span>
-									<span>Record message</span>
-								</div>
-								<div class="step">
-									<span class="step-number">3</span>
-									<span>Submit report</span>
-								</div>
-							</div>
-						</div>
-						<div class="report-method">
-							<div class="report-icon">
-								<i class="fas fa-video"></i>
-							</div>
-							<h3>Video Reporting</h3>
-							<p>
-								Upload sign language videos to communicate your
-								reports. Perfect for deaf and hard of hearing
-								users (coming soon).
-							</p>
-							<div class="report-status">
-								<span class="status-badge upcoming"
-									><i class="fas fa-clock"></i> Coming
-									Soon</span
-								>
-							</div>
-						</div>
-						<div class="report-method">
-							<div class="report-icon">
-								<i class="fas fa-icons"></i>
-							</div>
-							<h3>Icon-Based Forms</h3>
-							<p>
-								Use visual icons and symbols to fill out
-								complaint forms without needing to read or write
-								complex text.
-							</p>
-							<div class="report-features">
-								<span class="feature-tag"
-									><i class="fas fa-check"></i> Visual
-									Interface</span
-								>
-								<span class="feature-tag"
-									><i class="fas fa-check"></i> Easy
-									Navigation</span
-								>
-								<span class="feature-tag"
-									><i class="fas fa-check"></i>
-									Symbol-Based</span
-								>
-							</div>
-						</div>
+				<div class="mission-card">
+					<div class="mission-icon">
+						<i class="fas fa-star"></i>
 					</div>
-					<div class="report-process">
-						<div class="process-card">
-							<h3>How Reporting Works</h3>
-							<div class="process-flow">
-								<div class="process-step">
-									<div class="process-icon">
-										<i class="fas fa-sign-in-alt"></i>
-									</div>
-									<h4>1. Open App</h4>
-									<p>
-										Launch Nirapod Shobdo and select your
-										preferred accessibility mode
-									</p>
-								</div>
-								<div class="process-arrow">
-									<i class="fas fa-arrow-right"></i>
-								</div>
-								<div class="process-step">
-									<div class="process-icon">
-										<i class="fas fa-file-alt"></i>
-									</div>
-									<h4>2. Choose Report Type</h4>
-									<p>
-										Select voice, video or icon-based
-										reporting method
-									</p>
-								</div>
-								<div class="process-arrow">
-									<i class="fas fa-arrow-right"></i>
-								</div>
-								<div class="process-step">
-									<div class="process-icon">
-										<i class="fas fa-paper-plane"></i>
-									</div>
-									<h4>3. Submit Report</h4>
-									<p>
-										Send your report and receive
-										confirmation with Tracking ID
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="confirmation-demo">
-							<h3>Report Confirmation</h3>
-							<div class="confirmation-card">
-								<div class="success-icon">
-									<i class="fas fa-check-circle"></i>
-								</div>
-								<h4>Report Submitted Successfully</h4>
-								<div class="tracking-info">
-									<p><strong>Tracking ID:</strong></p>
-									<div class="tracking-id">8910-2305-19</div>
-								</div>
-								<div class="contact-options">
-									<button class="contact-btn">
-										<i class="fas fa-phone"></i> Contact
-										Support
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Mission & Vision Section -->
-		<section
-			id="mission"
-			class="mission"
-		>
-			<div class="container">
-				<div class="mission-content">
-					<div class="mission-card">
-						<div class="mission-icon">
-							<i class="fas fa-bullseye"></i>
-						</div>
-						<h3>Our Mission</h3>
-						<p>
-							To make legal rights truly accessible for people
-							with Neurodevelopmental Disabilities (NDD) and
-							Sensory Disabilities in Bangladesh through
-							innovative multimodal technology, ensuring everyone
-							can understand and exercise their legal rights.
-						</p>
-					</div>
-					<div class="mission-card">
-						<div class="mission-icon">
-							<i class="fas fa-eye"></i>
-						</div>
-						<h3>Our Vision</h3>
-						<p>
-							A Bangladesh where disability is never a barrier to
-							accessing justice and legal rights. We envision a
-							future where legal information and reporting systems
-							are fully accessible to all citizens aligning with
-							the Smart Bangladesh Vision 2041.
-						</p>
-					</div>
-					<div class="mission-card">
-						<div class="mission-icon">
-							<i class="fas fa-star"></i>
-						</div>
-						<h3>What Makes Us Unique</h3>
-						<p>
-							First app in Bangladesh combining multimodal
-							accessibility, Bangla-first civic technology, safe
-							reporting mechanisms and education empowerment - all
-							designed specifically for the disability community's
-							legal needs.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- SDG Goals Section -->
-		<section class="sdg-section">
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">Sustainable Development Goals</h2>
-					<p class="section-subtitle">
-						Our initiative contributes to global sustainable
-						development
+					<h3>What Makes Us Unique</h3>
+					<p>
+						First app in Bangladesh combining multimodal
+						accessibility, Bangla-first civic technology, safe
+						reporting mechanisms and education empowerment - all
+						designed specifically for the disability community's
+						legal needs.
 					</p>
 				</div>
-				<div class="sdg-goals">
-					<div class="sdg-goal">
-						<div class="sdg-icon">
-							<div class="sdg-number">4</div>
-							<i class="fas fa-graduation-cap"></i>
-						</div>
-						<h3>Quality Education</h3>
-						<p>
-							Ensuring inclusive and equitable education for all
-						</p>
-					</div>
-					<div class="sdg-goal">
-						<div class="sdg-icon">
-							<div class="sdg-number">10</div>
-							<i class="fas fa-equals"></i>
-						</div>
-						<h3>Reduced Inequalities</h3>
-						<p>
-							Empowering people with disabilities and promoting
-							inclusion
-						</p>
-					</div>
-					<div class="sdg-goal">
-						<div class="sdg-icon">
-							<div class="sdg-number">16</div>
-							<i class="fas fa-balance-scale"></i>
-						</div>
-						<h3>Peace & Justice</h3>
-						<p>Access to justice and strong institutions for all</p>
-					</div>
-				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Team Section -->
-		<section
-			id="team"
-			class="team"
-		>
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">Meet Our Team</h2>
-					<p class="section-subtitle">
-						Passionate individuals dedicated to making a difference
+	<!-- SDG Goals Section -->
+	<section class="sdg-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Sustainable Development Goals</h2>
+				<p class="section-subtitle">
+					Our initiative contributes to global sustainable
+					development
+				</p>
+			</div>
+			<div class="sdg-goals">
+				<div class="sdg-goal">
+					<div class="sdg-icon">
+						<div class="sdg-number">4</div>
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<h3>Quality Education</h3>
+					<p>
+						Ensuring inclusive and equitable education for all
 					</p>
 				</div>
-				<div class="team-grid">
-					<div class="team-member">
-						<div class="member-image">
-							<img
-								src="./assets/team_pics/rababa.jpeg"
-								alt="Team Member"
-							/>
-						</div>
-						<h3>Rababa Huma Biswas</h3>
-						<p class="member-role">Project Coordinator</p>
-						<!-- <p class="member-bio">Visionary leader with 15+ years in accessibility technology and personal experience with visual impairment.</p> -->
-						<div class="member-social">
-							<a
-								href="https://www.linkedin.com/in/rababa-huma-biswas-0291282a6/"
-								target="_blank"
-								><i class="fab fa-linkedin"></i
-							></a>
-							<!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-						</div>
+				<div class="sdg-goal">
+					<div class="sdg-icon">
+						<div class="sdg-number">10</div>
+						<i class="fas fa-equals"></i>
 					</div>
-					<div class="team-member">
-						<div class="member-image">
-							<img
-								src="./assets/team_pics/jawad.jpeg"
-								alt="Team Member"
-							/>
-						</div>
-						<h3>Jahin Jawad</h3>
-						<p class="member-role">Team Leader</p>
-						<!-- <p class="member-bio">AI and audio processing expert, PhD in Computer Science, passionate about assistive technology innovation.</p> -->
-						<div class="member-social">
-							<a href="https://www.linkedin.com/in/jahin-jawad-50929529a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-							<!-- <a href="#"><i class="fab fa-github"></i></a> -->
-						</div>
+					<h3>Reduced Inequalities</h3>
+					<p>
+						Empowering people with disabilities and promoting
+						inclusion
+					</p>
+				</div>
+				<div class="sdg-goal">
+					<div class="sdg-icon">
+						<div class="sdg-number">16</div>
+						<i class="fas fa-balance-scale"></i>
 					</div>
-					<div class="team-member">
-						<div class="member-image">
-							<img
-								src="./assets/team_pics/chaity.jpeg"
-								alt="Team Member"
-							/>
-						</div>
-						<h3>Chaity Rani Ghosh</h3>
-						<p class="member-role">Head of Design</p>
-						<!-- <p class="member-bio">UX specialist focused on inclusive design, ensuring our app is intuitive and accessible for all users.</p> -->
-						<div class="member-social">
-							<a
-								href="https://www.linkedin.com/in/chaity-rani-ghosh/"
-								target="_blank"
-								><i class="fab fa-linkedin"></i
-							></a>
-							<a href="https://github.com/chaityrg" target="_blank"><i class="fab fa-github"></i></a>
-						</div>
+					<h3>Peace & Justice</h3>
+					<p>Access to justice and strong institutions for all</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Team Section -->
+	<section id="team" class="team">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Meet Our Team</h2>
+				<p class="section-subtitle">
+					Passionate individuals dedicated to making a difference
+				</p>
+			</div>
+			<div class="team-grid">
+				<div class="team-member">
+					<div class="member-image">
+						<img src="./assets/team_pics/rababa.jpeg" alt="Team Member" />
 					</div>
-					<div class="team-member">
-						<div class="member-image">
-							<img
-								src="./assets/team_pics/sreezon.jpg"
-								alt="Team Member"
-							/>
-						</div>
-						<h3>Sreezon Das Gupta</h3>
-						<p class="member-role">Lead Developer</p>
-						<!-- <p class="member-bio">Full-stack developer with expertise in mobile applications and accessibility standards implementation.</p> -->
-						<div class="member-social">
-							<a
-								href="https://www.linkedin.com/in/sreezon-das-gupta-b38b08267/"
-								target="_blank"
-								><i class="fab fa-linkedin"></i
-							></a>
-							<a href="https://github.com/Sreezon23" target="_blank"><i class="fab fa-github"></i></a>
-						</div>
+					<h3>Rababa Huma Biswas</h3>
+					<p class="member-role">Project Coordinator</p>
+					<!-- <p class="member-bio">Visionary leader with 15+ years in accessibility technology and personal experience with visual impairment.</p> -->
+					<div class="member-social">
+						<a href="https://www.linkedin.com/in/rababa-huma-biswas-0291282a6/" target="_blank"><i
+								class="fab fa-linkedin"></i></a>
+						<!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
 					</div>
-					<div class="team-member">
-						<div class="member-image">
-							<img
-								src="./assets/team_pics/niloy.jpeg"
-								alt="Team Member"
-							/>
-						</div>
-						<h3>Niloy Ahsan</h3>
-						<p class="member-role">Developer</p>
-						<!-- <p class="member-bio">Full-stack developer with expertise in mobile applications and accessibility standards implementation.</p> -->
-						<div class="member-social">
-							<a
-								href="https://www.linkedin.com/in/niloyahsan1"
-								target="_blank"
-								><i class="fab fa-linkedin"></i
-							></a>
-							<a href="https://github.com/niloyahsan1" target="_blank"><i class="fab fa-github"></i></a>
-						</div>
+				</div>
+				<div class="team-member">
+					<div class="member-image">
+						<img src="./assets/team_pics/jawad.jpeg" alt="Team Member" />
+					</div>
+					<h3>Jahin Jawad</h3>
+					<p class="member-role">Team Leader</p>
+					<!-- <p class="member-bio">AI and audio processing expert, PhD in Computer Science, passionate about assistive technology innovation.</p> -->
+					<div class="member-social">
+						<a href="https://www.linkedin.com/in/jahin-jawad-50929529a/" target="_blank"><i
+								class="fab fa-linkedin"></i></a>
+						<!-- <a href="#"><i class="fab fa-github"></i></a> -->
+					</div>
+				</div>
+				<div class="team-member">
+					<div class="member-image">
+						<img src="./assets/team_pics/chaity.jpeg" alt="Team Member" />
+					</div>
+					<h3>Chaity Rani Ghosh</h3>
+					<p class="member-role">Head of Design</p>
+					<!-- <p class="member-bio">UX specialist focused on inclusive design, ensuring our app is intuitive and accessible for all users.</p> -->
+					<div class="member-social">
+						<a href="https://www.linkedin.com/in/chaity-rani-ghosh/" target="_blank"><i
+								class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/chaityrg" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+				<div class="team-member">
+					<div class="member-image">
+						<img src="./assets/team_pics/sreezon.jpg" alt="Team Member" />
+					</div>
+					<h3>Sreezon Das Gupta</h3>
+					<p class="member-role">Lead Developer</p>
+					<!-- <p class="member-bio">Full-stack developer with expertise in mobile applications and accessibility standards implementation.</p> -->
+					<div class="member-social">
+						<a href="https://www.linkedin.com/in/sreezon-das-gupta-b38b08267/" target="_blank"><i
+								class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/Sreezon23" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+				<div class="team-member">
+					<div class="member-image">
+						<img src="./assets/team_pics/niloy.jpeg" alt="Team Member" />
+					</div>
+					<h3>Niloy Ahsan</h3>
+					<p class="member-role">Developer</p>
+					<!-- <p class="member-bio">Full-stack developer with expertise in mobile applications and accessibility standards implementation.</p> -->
+					<div class="member-social">
+						<a href="https://www.linkedin.com/in/niloyahsan1" target="_blank"><i
+								class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/niloyahsan1" target="_blank"><i class="fab fa-github"></i></a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Testimonials Section -->
-		<!-- <section class="testimonials">
+	<!-- Testimonials Section -->
+	<!-- <section class="testimonials">
 			<div class="container">
 				<div class="section-header">
 					<h2 class="section-title">What Our Users Say</h2>
@@ -935,136 +800,103 @@
 			</div>
 		</section> -->
 
-		<!-- Contact Section -->
-		<section
-			id="contact"
-			class="contact"
-		>
-			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">Get In Touch</h2>
-					<p class="section-subtitle">
-						Join us in our mission to make the world more accessible
-					</p>
+	<!-- Contact Section -->
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Get In Touch</h2>
+				<p class="section-subtitle">
+					Join us in our mission to make the world more accessible
+				</p>
+			</div>
+			<div class="contact-content">
+				<div class="contact-info">
+					<div class="contact-item">
+						<div class="contact-icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div>
+							<h4>Email</h4>
+							<p>nirapodshobdo2025@gmail.com</p>
+							<!-- <p>info@nirapodshobdo.com</p> -->
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-icon">
+							<i class="fas fa-phone"></i>
+						</div>
+						<div>
+							<h4>Phone</h4>
+							<p>+8801999124962</p>
+							<!-- <p>+880 9876 543 210</p> -->
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div>
+							<h4>Address</h4>
+							<!-- <p>123 Innovation Street</p> -->
+							<p>Dhaka, Bangladesh 1216</p>
+						</div>
+					</div>
 				</div>
-				<div class="contact-content">
-					<div class="contact-info">
-						<div class="contact-item">
-							<div class="contact-icon">
-								<i class="fas fa-envelope"></i>
-							</div>
-							<div>
-								<h4>Email</h4>
-								<p>nirapodshobdo2025@gmail.com</p>
-								<!-- <p>info@nirapodshobdo.com</p> -->
-							</div>
+				<div class="contact-form">
+					<form id="contact-form">
+						<div class="form-group">
+							<input type="text" id="name" name="name" placeholder="Your Name" required />
 						</div>
-						<div class="contact-item">
-							<div class="contact-icon">
-								<i class="fas fa-phone"></i>
-							</div>
-							<div>
-								<h4>Phone</h4>
-								<p>+8801999124962</p>
-								<!-- <p>+880 9876 543 210</p> -->
-							</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Your Email" required />
 						</div>
-						<div class="contact-item">
-							<div class="contact-icon">
-								<i class="fas fa-map-marker-alt"></i>
-							</div>
-							<div>
-								<h4>Address</h4>
-								<!-- <p>123 Innovation Street</p> -->
-								<p>Dhaka, Bangladesh 1216</p>
-							</div>
+						<div class="form-group">
+							<input type="text" id="subject" name="subject" placeholder="Subject" required />
 						</div>
-					</div>
-					<div class="contact-form">
-						<form id="contact-form">
-							<div class="form-group">
-								<input
-									type="text"
-									id="name"
-									name="name"
-									placeholder="Your Name"
-									required
-								/>
-							</div>
-							<div class="form-group">
-								<input
-									type="email"
-									id="email"
-									name="email"
-									placeholder="Your Email"
-									required
-								/>
-							</div>
-							<div class="form-group">
-								<input
-									type="text"
-									id="subject"
-									name="subject"
-									placeholder="Subject"
-									required
-								/>
-							</div>
-							<div class="form-group">
-								<textarea
-									id="message"
-									name="message"
-									rows="5"
-									placeholder="Your Message"
-									required
-								></textarea>
-							</div>
-							<button
-								type="submit"
-								class="btn btn-primary"
-							>
-								<i class="fas fa-paper-plane"></i> Send Message
-							</button>
-						</form>
-					</div>
+						<div class="form-group">
+							<textarea id="message" name="message" rows="5" placeholder="Your Message"
+								required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<i class="fas fa-paper-plane"></i> Send Message
+						</button>
+					</form>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-logo">
-						<!-- <i class="fas fa-volume-up"></i> -->
-						<span>Nirapod Shobdo</span>
-					</div>
-					<p class="footer-tagline">
-						Empowering lives through innovative technology
-					</p>
-					<div class="footer-social">
-						<a
-							href="https://www.facebook.com/profile.php?id=61585815361813"
-							><i class="fab fa-facebook"></i
-						></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-instagram"></i></a>
-						<a
-							href="https://www.linkedin.com/in/rababa-huma-biswas-0291282a6/"
-							><i class="fab fa-linkedin"></i
-						></a>
-						<a href="#"><i class="fab fa-youtube"></i></a>
-					</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<!-- <i class="fas fa-volume-up"></i> -->
+					<span>Nirapod Shobdo</span>
 				</div>
-				<div class="footer-bottom">
-					<p>
-						&copy; 2026 Nirapod Shobdo. All rights reserved.
-						<!-- <a href="#">Privacy Policy</a> -->
-						<!-- <a href="#">Terms of Service</a> -->
-					</p>
+				<p class="footer-tagline">
+					Empowering lives through innovative technology
+				</p>
+				<div class="footer-social">
+					<a href="https://www.facebook.com/profile.php?id=61585815361813"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/rababa-huma-biswas-0291282a6/"><i
+							class="fab fa-linkedin"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
 				</div>
 			</div>
-		</footer>
+			<div class="footer-bottom">
+				<p>
+					&copy; 2026 Nirapod Shobdo. All rights reserved.
+					<!-- <a href="#">Privacy Policy</a> -->
+					<!-- <a href="#">Terms of Service</a> -->
+				</p>
+			</div>
+		</div>
+	</footer>
 
-		<script src="script.js"></script>
-	</body>
+	<script src="script.js"></script>
+</body>
+
 </html>
