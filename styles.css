@@ -211,8 +211,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,96C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>')
-		no-repeat bottom;
+	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,96C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
 	background-size: cover;
 }
 
@@ -314,10 +313,12 @@ body {
 }
 
 @keyframes float {
+
 	0%,
 	100% {
 		transform: translateY(0px);
 	}
+
 	50% {
 		transform: translateY(-20px);
 	}
@@ -354,6 +355,7 @@ body {
 }
 
 @keyframes bounce {
+
 	0%,
 	20%,
 	50%,
@@ -361,9 +363,11 @@ body {
 	100% {
 		transform: translateX(-50%) translateY(0);
 	}
+
 	40% {
 		transform: translateX(-50%) translateY(-10px);
 	}
+
 	60% {
 		transform: translateX(-50%) translateY(-5px);
 	}
@@ -875,11 +879,9 @@ section {
 	right: -50%;
 	width: 200%;
 	height: 200%;
-	background: radial-gradient(
-		circle,
-		rgba(255, 255, 255, 0.1) 0%,
-		transparent 70%
-	);
+	background: radial-gradient(circle,
+			rgba(255, 255, 255, 0.1) 0%,
+			transparent 70%);
 }
 
 .success-icon {
@@ -1441,7 +1443,25 @@ section {
 	}
 
 	.feature-cards {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+	}
+
+	.feature-card {
+		padding: 1rem 0.5rem;
+	}
+
+	.feature-card i {
+		font-size: 1.5rem;
+	}
+
+	.feature-card h4 {
+		font-size: 0.8rem;
+	}
+
+	.feature-card p {
+		display: none;
+		/* Hide detailed text on mobile to fit in one row */
 	}
 
 	.features-grid {
@@ -1507,6 +1527,41 @@ section {
 
 	.sdg-goal p {
 		font-size: 0.75rem;
+	}
+
+	.rights-grid {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.75rem;
+	}
+
+	.rights-item {
+		padding: 1.5rem 0.75rem;
+	}
+
+	.rights-item h3 {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.rights-item p {
+		font-size: 0.8rem;
+		line-height: 1.4;
+		margin-bottom: 1rem;
+	}
+
+	.rights-icon {
+		width: 50px;
+		height: 50px;
+		margin-bottom: 1rem;
+	}
+
+	.rights-icon i {
+		font-size: 1.2rem;
+	}
+
+	.rights-tag {
+		padding: 0.3rem 0.6rem;
+		font-size: 0.7rem;
 	}
 
 	.mission-content {
