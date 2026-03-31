@@ -18,7 +18,7 @@ Check out the live preview of [**Nirapod Shobdo**](https://nirapod-shobdo.netlif
 
 ## 📸 Demo Preview
 <p align="center">
-  <img src="./assets/demo.png" width="800" />
+  <img src="./assets/demo/demo_preview.png" width="800" />
 </p>
 
 ## Tech Stack
