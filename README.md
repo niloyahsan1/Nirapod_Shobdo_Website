@@ -16,7 +16,7 @@ This website serves as:
 ## Live Preview
 Check out the live preview of [**Nirapod Shobdo**](https://nirapod-shobdo.netlify.app/)
 
-## 📸 Demo Preview
+## Demo Preview
 <p align="center">
   <img src="./assets/demo/demo_preview.png" width="800" />
 </p>
