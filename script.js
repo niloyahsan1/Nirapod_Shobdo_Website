@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const demoBtn = document.querySelector(".btn-secondary");
 	if (demoBtn && demoBtn.textContent.includes("Demo")) {
 		demoBtn.addEventListener("click", function () {
-			window.open("assets/demo/Demo.mp4", "_blank");
+			window.open("assets/demo/Demo_Video.mp4.mp4", "_blank");
 			// showNotification('Demo video coming soon! Stay tuned.', 'info');
 		});
 	}
