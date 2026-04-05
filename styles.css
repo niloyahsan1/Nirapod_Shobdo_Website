@@ -1397,10 +1397,10 @@ section {
 @media (max-width: 768px) {
 	.nav-menu {
 		position: fixed;
-		left: -100%;
+		left: -110%;
 		top: 70px;
 		flex-direction: column;
-		background-color: white;
+		background-color: rgba(255, 255, 255, 0.8);
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
@@ -1410,6 +1410,10 @@ section {
 
 	.nav-menu.active {
 		left: 0;
+	}
+
+	.nav-link {
+		color: #2563eb !important;
 	}
 
 	.nav-toggle {
