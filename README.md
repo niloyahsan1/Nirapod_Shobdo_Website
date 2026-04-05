@@ -14,7 +14,7 @@ This website serves as:
 * A **gateway** for users to explore and adopt the app
 
 ## Live Preview
-Check out the live preview of [**Nirapod Shobdo**](https://nirapod-shobdo.netlify.app/)
+Check out the live preview of [**Nirapod Shobdo**](https://nirapod-shobdo.com/)
 
 ## Demo Preview
 <p align="center">
