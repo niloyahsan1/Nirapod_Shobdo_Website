@@ -151,17 +151,34 @@ body {
 }
 
 .beta-badge {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.5rem;
-	background: rgba(251, 191, 36, 0.2);
-	color: #fbbf24;
-	padding: 0.5rem 1rem;
-	border-radius: 50px;
-	font-size: 0.9rem;
-	font-weight: 600;
-	margin-bottom: 1.5rem;
-	border: 2px solid #fbbf24;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 2px solid #fbbf24;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.badge-text .title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.badge-text .subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .accessibility-modes {
