@@ -150,35 +150,37 @@ body {
 	padding: 100px 0 80px;
 }
 
-.beta-badge {
+.award-badge {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    background: rgba(251, 191, 36, 0.2);
-    color: #fbbf24;
-    padding: 0.6rem 1.2rem;
-    border-radius: 12px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    border: 2px solid #fbbf24;
+    align-items: center;
+    padding: 4px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.badge-text {
+.badge-inner {
+    background: #1f2937; /* dark inner for contrast */
+    color: #fbbf24;
+    border-radius: 50px;
+    padding: 0.6rem 1.4rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     line-height: 1.2;
 }
 
-.badge-text .title {
+.badge-title {
     font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-.badge-text .subtitle {
-    font-size: 0.8rem;
+.badge-subtitle {
+    font-size: 0.75rem;
     font-weight: 500;
+    opacity: 0.9;
 }
 
 .accessibility-modes {
