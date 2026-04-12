@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (downloadBtn && downloadBtn.textContent.includes("Download")) {
 		downloadBtn.addEventListener("click", function () {
 			window.open(
-				"https://drive.google.com/file/d/17ABrJHrAZuLdCIBWdZmlEPULSyUmiusg/view?usp=drive_link",
+				"https://github.com/niloyahsan1/nirapod-shobdo/releases/download/v1.1/Nirapod.Shobdo.apk",
 				"_blank",
 			);
 		});
