@@ -152,35 +152,41 @@ body {
 
 .award-badge {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
     padding: 4px;
-    border-radius: 50px;
+    border-radius: 60px;
     background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .badge-inner {
-    background: #1f2937; /* dark inner for contrast */
-    color: #fbbf24;
-    border-radius: 50px;
-    padding: 0.6rem 1.4rem;
+    background: rgba(31, 41, 55, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 60px;
+    padding: 0.8rem 1.8rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    line-height: 1.2;
+    align-items: center;
 }
 
-.badge-title {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-.badge-subtitle {
-    font-size: 0.75rem;
-    font-weight: 500;
+/* Small top text */
+.badge-top {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fbbf24;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
     opacity: 0.9;
+}
+
+/* Main big title */
+.badge-main {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
 }
 
 .accessibility-modes {
