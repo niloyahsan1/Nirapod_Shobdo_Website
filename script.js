@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	const navToggle = document.getElementById("nav-toggle");
 	const navMenu = document.getElementById("nav-menu");
 	const navLinks = document.querySelectorAll(".nav-link");
+	const mobileNavItems = document.querySelectorAll(".mobile-bottom-nav .mobile-nav-item");
+
+	// Initialize Lenis smooth scrolling
+	const lenis = new Lenis();
+
+	function raf(time) {
+		lenis.raf(time);
+		requestAnimationFrame(raf);
+	}
+
+	requestAnimationFrame(raf);
 
 	// Mobile menu toggle
 	navToggle.addEventListener("click", function () {
@@ -28,19 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	// Smooth scrolling for navigation links
-	navLinks.forEach((link) => {
+	// Smooth scrolling for navigation and other anchor links using Lenis
+	document.querySelectorAll('a[href^="#"]').forEach((link) => {
 		link.addEventListener("click", function (e) {
 			e.preventDefault();
 			const targetId = this.getAttribute("href");
-			const targetSection = document.querySelector(targetId);
-
-			if (targetSection) {
-				const offsetTop = targetSection.offsetTop - 70;
-				window.scrollTo({
-					top: offsetTop,
-					behavior: "smooth",
-				});
+			if (targetId === "#") {
+				lenis.scrollTo(0);
+			} else {
+				const targetSection = document.querySelector(targetId);
+				if (targetSection) {
+					lenis.scrollTo(targetSection, {
+						offset: -70
+					});
+				}
 			}
 		});
 	});
@@ -60,6 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 
 		navLinks.forEach((link) => {
+			link.classList.remove("active");
+			if (link.getAttribute("href").slice(1) === current) {
+				link.classList.add("active");
+			}
+		});
+
+		mobileNavItems.forEach((link) => {
 			link.classList.remove("active");
 			if (link.getAttribute("href").slice(1) === current) {
 				link.classList.add("active");
@@ -296,8 +315,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	// Download button functionality
-	const downloadBtn = document.querySelector(".btn-primary");
-	if (downloadBtn && downloadBtn.textContent.includes("Download")) {
+	const downloadBtn = document.querySelector(".btn-download");
+	if (downloadBtn) {
 		downloadBtn.addEventListener("click", function () {
 			window.open(
 				"https://github.com/niloyahsan1/nirapod-shobdo/releases/download/v1.1/Nirapod.Shobdo.apk",
@@ -307,8 +326,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	// Demo button functionality
-	const demoBtn = document.querySelector(".btn-secondary");
-	if (demoBtn && demoBtn.textContent.includes("Demo")) {
+	const demoBtn = document.querySelector(".btn-demo");
+	if (demoBtn) {
 		demoBtn.addEventListener("click", function () {
 			window.open("assets/demo/Demo_Video.mp4", "_blank");
 			// showNotification('Demo video coming soon! Stay tuned.', 'info');

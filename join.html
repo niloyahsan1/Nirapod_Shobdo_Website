@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Join Us - Nirapod Shobdo</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+	<link rel="icon" type="image/png" href="./assets/favicon.png" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar" id="navbar">
+		<div class="nav-container">
+			<a href="index.html#home" class="nav-logo">
+				<img src="./assets/favicon.png" alt="Nirapod Shobdo Logo" class="nav-logo-img" />
+				<span>Nirapod Shobdo</span>
+			</a>
+			<ul class="nav-menu" id="nav-menu">
+				<li class="nav-item">
+					<a href="index.html#home" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#features" class="nav-link">Features</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#rights" class="nav-link">Rights</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#report" class="nav-link">Report</a>
+				</li>
+				<li class="nav-item">
+					<a href="team.html" class="nav-link">Team</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a href="join.html" class="nav-link active">Join Us</a>
+				</li>
+			</ul>
+			<div class="nav-toggle" id="nav-toggle">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Banner -->
+	<section class="page-banner">
+		<div class="container">
+			<h1>Join Our Initiative</h1>
+			<p>Become a volunteer, partner, or donor to support civic tech accessibility</p>
+		</div>
+	</section>
+
+	<!-- Join Section -->
+	<section class="join-section" style="padding-top: 60px; padding-bottom: 80px;">
+		<div class="container">
+			<div class="join-tabs-container">
+				<div class="join-tabs">
+					<button class="join-tab-btn active" data-tab="volunteer">
+						<i class="fas fa-hands-helping"></i>
+						<span>Volunteer</span>
+					</button>
+					<button class="join-tab-btn" data-tab="partner">
+						<i class="fas fa-handshake"></i>
+						<span>Partner</span>
+					</button>
+					<button class="join-tab-btn" data-tab="donor">
+						<i class="fas fa-donate"></i>
+						<span>Donor</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="join-form-wrapper">
+				<!-- Volunteer Form -->
+				<div id="volunteer-tab" class="join-form-container active">
+					<div class="form-header">
+						<h2>Volunteer with Us</h2>
+						<p>Lend your skills to build accessible tech and empower disabled learners in Bangladesh.</p>
+					</div>
+					<form class="join-form" id="volunteer-form">
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="vol-name">Full Name</label>
+								<input type="text" id="vol-name" name="name" placeholder="Your Name" required />
+							</div>
+							<div class="form-group">
+								<label for="vol-phone">Phone Number</label>
+								<input type="tel" id="vol-phone" name="phone" placeholder="Your Phone Number" required />
+							</div>
+							<div class="form-group">
+								<label for="vol-email">Email Address</label>
+								<input type="email" id="vol-email" name="email" placeholder="Your Email Address" required />
+							</div>
+							<div class="form-group">
+								<label for="vol-division">Division</label>
+								<select id="vol-division" name="division" required>
+									<option value="" disabled selected>Select Your Division</option>
+									<option value="Dhaka">Dhaka</option>
+									<option value="Chattogram">Chattogram</option>
+									<option value="Rajshahi">Rajshahi</option>
+									<option value="Khulna">Khulna</option>
+									<option value="Barishal">Barishal</option>
+									<option value="Sylhet">Sylhet</option>
+									<option value="Rangpur">Rangpur</option>
+									<option value="Mymensingh">Mymensingh</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="vol-cv" class="file-upload-label">
+								<i class="fas fa-cloud-upload-alt"></i> Upload CV/Resume
+							</label>
+							<input type="file" id="vol-cv" name="cv" accept=".pdf,.doc,.docx" required style="display: none;" />
+							<span id="vol-cv-filename" class="file-name-span">No file chosen (PDF, DOC, DOCX up to 5MB)</span>
+						</div>
+						<div class="form-group">
+							<label for="vol-message">Why do you want to join us?</label>
+							<textarea id="vol-message" name="message" rows="4" placeholder="Briefly describe your motivation and skills..." required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<i class="fas fa-paper-plane"></i> Submit Volunteer Application
+						</button>
+					</form>
+				</div>
+
+				<!-- Partner Form -->
+				<div id="partner-tab" class="join-form-container">
+					<div class="form-header">
+						<h2>Become a Partner</h2>
+						<p>Collaborate with us to expand digital accessibility and rights advocacy across the nation.</p>
+					</div>
+					<form class="join-form" id="partner-form">
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="part-org">Organization Name</label>
+								<input type="text" id="part-org" name="org" placeholder="Organization/Company Name" required />
+							</div>
+							<div class="form-group">
+								<label for="part-name">Contact Person Name</label>
+								<input type="text" id="part-name" name="name" placeholder="Your Name" required />
+							</div>
+							<div class="form-group">
+								<label for="part-phone">Phone Number</label>
+								<input type="tel" id="part-phone" name="phone" placeholder="Your Phone Number" required />
+							</div>
+							<div class="form-group">
+								<label for="part-email">Email Address</label>
+								<input type="email" id="part-email" name="email" placeholder="Your Email Address" required />
+							</div>
+							<div class="form-group" style="grid-column: span 2;">
+								<label for="part-division">Division</label>
+								<select id="part-division" name="division" required>
+									<option value="" disabled selected>Select Your Division</option>
+									<option value="Dhaka">Dhaka</option>
+									<option value="Chattogram">Chattogram</option>
+									<option value="Rajshahi">Rajshahi</option>
+									<option value="Khulna">Khulna</option>
+									<option value="Barishal">Barishal</option>
+									<option value="Sylhet">Sylhet</option>
+									<option value="Rangpur">Rangpur</option>
+									<option value="Mymensingh">Mymensingh</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="part-message">Partnership Proposal / Message</label>
+							<textarea id="part-message" name="message" rows="4" placeholder="Describe how your organization would like to partner with Nirapod Shobdo..." required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<i class="fas fa-paper-plane"></i> Submit Partnership Inquiry
+						</button>
+					</form>
+				</div>
+
+				<!-- Donor Form -->
+				<div id="donor-tab" class="join-form-container">
+					<div class="form-header">
+						<h2>Support as a Donor</h2>
+						<p>Support our research and app expansion for learners with disabilities through donations.</p>
+					</div>
+					<form class="join-form" id="donor-form">
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="don-name">Full Name / Organization</label>
+								<input type="text" id="don-name" name="name" placeholder="Your Name or Org Name" required />
+							</div>
+							<div class="form-group">
+								<label for="don-phone">Phone Number</label>
+								<input type="tel" id="don-phone" name="phone" placeholder="Your Phone Number" required />
+							</div>
+							<div class="form-group">
+								<label for="don-email">Email Address</label>
+								<input type="email" id="don-email" name="email" placeholder="Your Email Address" required />
+							</div>
+							<div class="form-group">
+								<label for="don-division">Division</label>
+								<select id="don-division" name="division" required>
+									<option value="" disabled selected>Select Your Division</option>
+									<option value="Dhaka">Dhaka</option>
+									<option value="Chattogram">Chattogram</option>
+									<option value="Rajshahi">Rajshahi</option>
+									<option value="Khulna">Khulna</option>
+									<option value="Barishal">Barishal</option>
+									<option value="Sylhet">Sylhet</option>
+									<option value="Rangpur">Rangpur</option>
+									<option value="Mymensingh">Mymensingh</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="don-message">Donor Message / Support Preferences</label>
+							<textarea id="don-message" name="message" rows="4" placeholder="Share how you'd like to support us (sponsorship, grants, equipment, etc.)..." required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">
+							<i class="fas fa-paper-plane"></i> Submit Donation Interest
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-grid">
+				<!-- Column 1 & 2: Brand Information -->
+				<div class="footer-col footer-brand">
+					<div class="footer-logo">
+						<img src="./assets/favicon.png" alt="Nirapod Shobdo Logo" class="footer-logo-img" />
+						<span>Nirapod Shobdo</span>
+					</div>
+					<p class="footer-description">
+						A pioneering civic technology platform in Bangladesh dedicated to making legal rights and report tracking accessible for persons with neurodevelopmental and sensory disabilities.
+					</p>
+					<div class="footer-social-row">
+						<a href="https://www.facebook.com/nirapodshobdo/" target="_blank" rel="noopener noreferrer" title="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="#" target="_blank" rel="noopener noreferrer" title="Twitter">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" target="_blank" rel="noopener noreferrer" title="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="#" target="_blank" rel="noopener noreferrer" title="YouTube">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+				</div>
+
+				<!-- Column 3: Quick Links -->
+				<div class="footer-col footer-links">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="index.html#home">Home</a></li>
+						<li><a href="index.html#features">App Features</a></li>
+						<li><a href="index.html#rights">Rights Information</a></li>
+						<li><a href="index.html#report">Report & Track</a></li>
+						<li><a href="team.html">Our Team</a></li>
+						<li><a href="contact.html">Get in Touch</a></li>
+						<li><a href="join.html">Join Us</a></li>
+					</ul>
+				</div>
+
+				<!-- Column 4: Contact Info -->
+				<div class="footer-col footer-contact">
+					<h3>Contact Us</h3>
+					<div class="contact-list">
+						<div class="contact-item">
+							<div class="contact-item-icon">
+								<i class="fas fa-phone-alt"></i>
+							</div>
+							<div class="contact-item-text">
+								<span class="contact-item-label">Call Us</span>
+								<a href="tel:+8801999124962" class="contact-item-value">+8801999124962</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-item-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="contact-item-text">
+								<span class="contact-item-label">Email Us</span>
+								<a href="mailto:nirapodshobdo2025@gmail.com" class="contact-item-value">nirapodshobdo2025@gmail.com</a>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-item-icon">
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div class="contact-item-text">
+								<span class="contact-item-label">Our Address</span>
+								<span class="contact-item-value">Dhaka, Bangladesh 1216</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Bottom Bar -->
+			<div class="footer-bottom">
+				<p class="copyright">
+					&copy; 2026 Nirapod Shobdo. All rights reserved.
+				</p>
+				<p class="footer-bottom-tagline">
+					Making Civic Tech Accessible in Bangladesh
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Mobile Bottom Navigation Bar -->
+	<div class="mobile-bottom-nav">
+		<a href="index.html#home" class="mobile-nav-item">
+			<i class="fas fa-home"></i>
+			<span>Home</span>
+		</a>
+		<a href="index.html#features" class="mobile-nav-item">
+			<i class="fas fa-cubes"></i>
+			<span>Features</span>
+		</a>
+		<a href="index.html#rights" class="mobile-nav-item">
+			<i class="fas fa-balance-scale"></i>
+			<span>Rights</span>
+		</a>
+		<a href="index.html#report" class="mobile-nav-item">
+			<i class="fas fa-microphone"></i>
+			<span>Report</span>
+		</a>
+		<a href="team.html" class="mobile-nav-item">
+			<i class="fas fa-users"></i>
+			<span>Team</span>
+		</a>
+	</div>
+
+	<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+		// Tab Switcher Logic
+		const tabs = document.querySelectorAll('.join-tab-btn');
+		const containers = document.querySelectorAll('.join-form-container');
+
+		tabs.forEach(tab => {
+			tab.addEventListener('click', () => {
+				// Remove active class from all tabs
+				tabs.forEach(t => t.classList.remove('active'));
+				// Add active class to clicked tab
+				tab.classList.add('active');
+
+				// Hide all forms
+				containers.forEach(c => c.classList.remove('active'));
+				// Show active form
+				const activeTabId = `${tab.getAttribute('data-tab')}-tab`;
+				document.getElementById(activeTabId).classList.add('active');
+			});
+		});
+
+		// File Input Label update logic
+		const fileInput = document.getElementById('vol-cv');
+		const fileNameSpan = document.getElementById('vol-cv-filename');
+
+		if (fileInput && fileNameSpan) {
+			fileInput.addEventListener('change', (e) => {
+				if (e.target.files.length > 0) {
+					fileNameSpan.textContent = e.target.files[0].name;
+					fileNameSpan.style.color = '#10b981'; // Success Color
+				} else {
+					fileNameSpan.textContent = 'No file chosen (PDF, DOC, DOCX up to 5MB)';
+					fileNameSpan.style.color = 'inherit';
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>
