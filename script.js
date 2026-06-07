@@ -72,16 +72,26 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 
 		navLinks.forEach((link) => {
-			link.classList.remove("active");
-			if (link.getAttribute("href").slice(1) === current) {
-				link.classList.add("active");
+			const href = link.getAttribute("href");
+			if (href && (href.startsWith("#") || href.includes("#"))) {
+				link.classList.remove("active");
+				const hashIndex = href.indexOf("#");
+				const targetId = hashIndex !== -1 ? href.slice(hashIndex + 1) : href;
+				if (targetId === current) {
+					link.classList.add("active");
+				}
 			}
 		});
 
 		mobileNavItems.forEach((link) => {
-			link.classList.remove("active");
-			if (link.getAttribute("href").slice(1) === current) {
-				link.classList.add("active");
+			const href = link.getAttribute("href");
+			if (href && (href.startsWith("#") || href.includes("#"))) {
+				link.classList.remove("active");
+				const hashIndex = href.indexOf("#");
+				const targetId = hashIndex !== -1 ? href.slice(hashIndex + 1) : href;
+				if (targetId === current) {
+					link.classList.add("active");
+				}
 			}
 		});
 	});
@@ -315,24 +325,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	// Download button functionality
-	const downloadBtn = document.querySelector(".btn-download");
-	if (downloadBtn) {
-		downloadBtn.addEventListener("click", function () {
-			window.open(
-				"https://github.com/niloyahsan1/nirapod-shobdo/releases/download/v1.1/Nirapod.Shobdo.apk",
-				"_blank",
-			);
-		});
-	}
+	// const downloadBtn = document.querySelector(".btn-download");
+	// if (downloadBtn) {
+	// 	downloadBtn.addEventListener("click", function () {
+	// 		window.open(
+	// 			"https://github.com/niloyahsan1/nirapod-shobdo/releases/download/v1.1/Nirapod.Shobdo.apk",
+	// 			"_blank",
+	// 		);
+	// 	});
+	// }
 
 	// Demo button functionality
-	const demoBtn = document.querySelector(".btn-demo");
-	if (demoBtn) {
-		demoBtn.addEventListener("click", function () {
-			window.open("assets/demo/Demo_Video.mp4", "_blank");
-			// showNotification('Demo video coming soon! Stay tuned.', 'info');
-		});
-	}
+	// const demoBtn = document.querySelector(".btn-demo");
+	// if (demoBtn) {
+	// 	demoBtn.addEventListener("click", function () {
+	// 		window.open("assets/demo/Demo_Video.mp4", "_blank");
+	// 		// showNotification('Demo video coming soon! Stay tuned.', 'info');
+	// 	});
+	// }
 
 	// Keyboard navigation support
 	document.addEventListener("keydown", function (e) {
