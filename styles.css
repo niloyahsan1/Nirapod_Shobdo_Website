@@ -106,7 +106,7 @@ h6 {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 0 40px;
 }
@@ -159,7 +159,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 92%;
-	max-width: 1200px;
+	max-width: 1400px;
 	background: rgba(255, 255, 255, 0);
 	backdrop-filter: blur(0px);
 	-webkit-backdrop-filter: blur(0px);
@@ -1684,6 +1684,13 @@ section {
 	gap: 2rem;
 }
 
+@media (min-width: 1025px) {
+	.team-grid {
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1.5rem;
+	}
+}
+
 .team-member {
 	background: var(--bg-secondary);
 	border-radius: var(--radius-lg);
@@ -2586,6 +2593,7 @@ html.lenis body {
 		opacity: 0;
 		transform: translateY(20px);
 	}
+
 	to {
 		opacity: 1;
 		transform: translateY(0);
@@ -2596,25 +2604,31 @@ html.lenis body {
 	.page-banner {
 		padding: 110px 0 50px;
 	}
+
 	.page-banner h1 {
 		font-size: 2.2rem;
 	}
+
 	.page-banner p {
 		font-size: 1rem;
 	}
+
 	.join-tabs {
 		width: 100%;
 		justify-content: space-around;
 	}
+
 	.join-tab-btn {
 		padding: 10px 14px;
 		font-size: 0.9rem;
 		flex: 1;
 		justify-content: center;
 	}
+
 	.join-form-wrapper {
 		padding: 2rem 1.5rem;
 	}
+
 	.form-grid {
 		grid-template-columns: 1fr;
 		gap: 1.25rem;
