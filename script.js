@@ -410,5 +410,30 @@ function initializeInteractions(lenis) {
 		}
 	});
 
+	// Activities Filter Tabs Interaction
+	const tabButtons = document.querySelectorAll(".activities-tabs .tab-btn");
+	const activityCards = document.querySelectorAll(".activities-grid .activity-card");
+
+	if (tabButtons.length > 0 && activityCards.length > 0) {
+		tabButtons.forEach(button => {
+			button.addEventListener("click", () => {
+				// Remove active class from all buttons
+				tabButtons.forEach(btn => btn.classList.remove("active"));
+				// Add active class to clicked button
+				button.classList.add("active");
+
+				const filter = button.getAttribute("data-filter");
+
+				activityCards.forEach(card => {
+					if (filter === "all" || card.getAttribute("data-category") === filter) {
+						card.classList.remove("hide");
+					} else {
+						card.classList.add("hide");
+					}
+				});
+			});
+		});
+	}
+
 	console.log("Nirapod Shobdo interactive page features loaded.");
 }

@@ -2682,3 +2682,248 @@ html.lenis body {
 		height: 42px;
 	}
 }
+
+/* ==========================================================================
+   ACTIVITIES & MEDIA SECTION
+   ========================================================================== */
+.activities {
+	background-color: var(--bg-secondary);
+}
+
+.activities-tabs {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 2.5rem;
+	flex-wrap: wrap;
+}
+
+.activities-tabs .tab-btn {
+	padding: 10px 24px;
+	border-radius: var(--radius-full);
+	border: 1px solid rgba(var(--primary-rgb), 0.15);
+	background: var(--bg-primary);
+	color: var(--text-muted);
+	font-family: var(--font-primary);
+	font-size: 0.95rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--transition-smooth);
+}
+
+.activities-tabs .tab-btn:hover {
+	border-color: var(--primary);
+	color: var(--primary);
+	background: rgba(var(--primary-rgb), 0.02);
+}
+
+.activities-tabs .tab-btn.active {
+	background: var(--primary);
+	color: #fff;
+	border-color: var(--primary);
+	box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.25);
+}
+
+.activities-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 1rem;
+	transition: var(--transition-smooth);
+}
+
+.activity-card {
+	background: var(--bg-primary);
+	border-radius: var(--radius-lg);
+	border: 1px solid rgba(15, 45, 89, 0.06);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+	transition: var(--transition-bounce);
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.activity-card.hide {
+	display: none;
+	opacity: 0;
+	transform: scale(0.9);
+}
+
+.activity-card:hover {
+	transform: translateY(-8px);
+	box-shadow: var(--shadow-lg);
+	border-color: rgba(var(--primary-rgb), 0.2);
+}
+
+.activity-video {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+}
+
+.aspect-video {
+	aspect-ratio: 16 / 9;
+}
+
+.activity-video iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.activity-image {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: #f1f5f9;
+}
+
+.activity-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.activity-facebook-header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.fb-logo-placeholder {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #1877f2;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+.fb-page-name {
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--secondary);
+}
+
+.fb-post-time {
+	font-size: 0.8rem;
+	color: var(--text-muted);
+}
+
+.activity-info {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.activity-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	align-self: flex-start;
+	padding: 4px 12px;
+	border-radius: var(--radius-full);
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.tag-video {
+	background: rgba(239, 68, 68, 0.1);
+	color: #ef4444;
+}
+
+.tag-news {
+	background: rgba(var(--primary-rgb), 0.1);
+	color: var(--primary);
+}
+
+.tag-fb {
+	background: rgba(24, 119, 242, 0.1);
+	color: #1877f2;
+}
+
+.activity-date {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+	margin-bottom: 0.5rem;
+}
+
+.activity-card-title {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--secondary);
+	margin-bottom: 0.75rem;
+	line-height: 1.4;
+}
+
+.activity-card-desc {
+	font-size: 0.95rem;
+	color: var(--text-muted);
+	margin-bottom: 1.5rem;
+	line-height: 1.6;
+	flex-grow: 1;
+}
+
+.activity-link {
+	align-self: flex-start;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--primary);
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: var(--transition-smooth);
+}
+
+.activity-link:hover {
+	color: var(--primary-hover);
+	gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+	.activities-grid {
+		grid-template-columns: 1fr;
+	}
+	.activities-tabs .tab-btn {
+		padding: 8px 18px;
+		font-size: 0.85rem;
+	}
+}
+
+.activity-meta-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.75rem;
+	width: 100%;
+}
+
+.activity-meta-row .activity-tag {
+	margin-bottom: 0;
+}
+
+.activity-link-header {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--primary);
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	transition: var(--transition-smooth);
+}
+
+.activity-link-header:hover {
+	color: var(--primary-hover);
+}
