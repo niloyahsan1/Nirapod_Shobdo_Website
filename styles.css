@@ -155,29 +155,29 @@ section {
    ========================================================================== */
 .navbar {
 	position: fixed;
-	top: 15px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 92%;
-	max-width: 1400px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
 	background: rgba(255, 255, 255, 0);
 	backdrop-filter: blur(0px);
 	-webkit-backdrop-filter: blur(0px);
 	z-index: 1000;
 	transition: var(--transition-smooth);
 	box-shadow: none;
-	border-radius: 20px;
-	border: 1px solid rgba(255, 255, 255, 0);
+	border-radius: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 .navbar.scrolled {
-	top: 8px;
-	width: 95%;
-	background: rgba(255, 255, 255, 0.30);
+	top: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.92);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
-	box-shadow: var(--shadow-lg);
-	border: 1px solid rgba(255, 255, 255, 0.4);
+	box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+	border-radius: 0;
+	border-bottom: 1px solid var(--primary);
 }
 
 .nav-container {
@@ -185,7 +185,10 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	height: 65px;
-	padding: 0 30px;
+	padding: 0 40px;
+	max-width: 1450px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .nav-logo {
