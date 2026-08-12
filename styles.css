@@ -106,7 +106,7 @@ h6 {
 }
 
 .container {
-	max-width: 1400px;
+	max-width: 1450px;
 	margin: 0 auto;
 	padding: 0 40px;
 }
@@ -2726,9 +2726,15 @@ html.lenis body {
 
 .activities-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: 1rem;
 	transition: var(--transition-smooth);
+}
+
+@media (min-width: 1200px) {
+	.activities-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .activity-card {
