@@ -2904,6 +2904,7 @@ html.lenis body {
 	.activities-grid {
 		grid-template-columns: 1fr;
 	}
+
 	.activities-tabs .tab-btn {
 		padding: 8px 18px;
 		font-size: 0.85rem;
